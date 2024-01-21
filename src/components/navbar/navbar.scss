@@ -1,0 +1,191 @@
+/* ======================== Navbar Css Start ================================ */
+.search-box {
+  position: relative;
+  &__icon {
+    position: absolute;
+    left: 12px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: var(--body-color);
+    .icon {
+      font-size: 22px;
+    }
+  }
+  .form-control {
+    padding-left: 44px;
+  }
+}
+
+.header-navbar {
+  border-bottom: 1px solid #ddd;
+  padding: 8px 24px;
+}
+
+/* Action Buttons Css Start */
+.action-item {
+    position: relative;
+    &__button {
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        position: relative;
+        &:hover {
+            .icon {
+                color: var(--base);
+            }
+            &::before {
+                visibility: visible;
+                opacity: 1;
+                width: 100%;
+                transform: translate(-50%, -50%) scale(1);
+            }
+        }
+        &::before {
+            position: absolute;
+            content: "";
+            height: 100%;
+            width: 100%;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%) scale(.6);
+            visibility: hidden;
+            opacity: 0;
+            background: var(--base-soft);
+            border-radius: inherit;
+            transition: .2s;
+        }
+        .icon {
+            width: 24px;
+            color: var(--body-color);
+        }
+    }
+}
+/* Action Buttons Css End */
+
+/* Notification Css Start */
+.notification-badge {
+    position: absolute;
+    right: 0;
+    top: 3px;
+    background: red;
+    color: var(--white);
+    min-width: 18px;
+    height: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 72px;
+    font-size: 11px;
+    font-weight: 600;
+    padding: 0 6px;
+}
+
+.notification-dropdown {
+    position: absolute;
+    right: 0;
+    min-width: 300px;
+    top: 100%;
+    background-color: var(--bg-white);
+    box-shadow: var(--box-shadow);
+    border-radius: 6px;
+    overflow: hidden;
+    z-index: 2;
+    max-height: 500px;
+    overflow-y: auto;
+    &__item {
+        margin-bottom: 12px;
+        padding-bottom: 12px;
+        border-bottom: 1px solid var(--border-color);
+        &:last-child {
+            margin-bottom: 0;
+            padding-bottom: 0;
+            border-bottom: 0;
+        }
+    }
+    &__thumb {
+        width: 34px;
+        height: 34px;
+        border-radius: 50%;
+        overflow: hidden;
+    }
+    &__header {
+        background-color: var(--base);
+        color: var(--white);
+        padding: 8px 16px;
+      }
+      &__body {
+        padding: 16px;
+      }
+      &__time {
+        display: block;
+        font-size: 10px;
+        margin-top: 4px;
+      }
+      &__name {
+        margin-bottom: 0;
+      }
+      &__desc {
+        font-size: 12px;
+        color: var(--body-color);
+        font-weight: 400;
+      }
+}
+/* Notification Css ENd */
+
+/* User Info Css Start */
+.user-info {
+    &.bordered {
+        outline: 2px solid var(--base) !important;
+    }
+    &__thumb {
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        img {
+            object-fit: cover;
+        }
+    }
+}
+.user-info-dropdown {
+    position: absolute;
+    right: 0;
+    width: 180px;
+    background-color: var(--bg-white);
+    box-shadow: var(--box-shadow);
+    border-radius: 6px;
+    padding: 8px 0;
+    z-index: 2;
+    &__list {
+        margin-bottom: 0;
+    }
+    &__text {
+        font-size: 12px;
+        font-weight: 600;
+        padding: 0px 16px;
+        display: inline-block;
+        margin-bottom: 8px;
+    }
+    &__link {
+        text-decoration: none;
+        color: var(--body-color);
+        font-size: 14px;
+        font-weight: 400;
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        padding: 8px 16px;
+        transition: .2s;
+        &:hover, &.active {
+            background-color: var(--base-soft);
+            color: var(--base);
+        }
+        .icon {
+            font-size: 20px;
+        }
+    }
+}
+
+/* User Info Css End */
+
+
+/* ======================== Navbar Css End ================================ */

@@ -1,0 +1,70 @@
+/* ===================== Sidebar Css Start ======================== */
+
+.sidebar {
+  width: 250px;
+  border-right: 1px solid var(--border-color);
+  height: 100vh;
+  position: sticky;
+  top: 0;
+  &__logo {
+    text-align: center;
+    padding: 0 16px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    img {
+      max-width: 132px;
+    }
+  }
+}
+
+.sidebar-menu {
+  height: calc(100vh - 60px);
+  overflow-y: auto;
+  &::-webkit-scrollbar {
+    width: 4px;
+  }
+  &::-webkit-scrollbar-thumb {
+    background: #c8c8c8;
+    border-radius: 40px;
+  }
+  &::-webkit-scrollbar-thumb:hover {
+    background: #acaaaa;
+  }
+  &::-webkit-scrollbar-thumb:active {
+    background: #979797;
+  }
+
+  &__title {
+    letter-spacing: 0.05em;
+    cursor: default;
+    font-size: 11px;
+    text-transform: uppercase;
+    color: #a4a4a4;
+    padding: 20px;
+    padding-bottom: 8px;
+    font-weight: 700;
+    display: inline-block;
+  }
+  &__link {
+    padding: 10px 32px;
+    display: block;
+    text-decoration: none;
+    color: #6d7080;
+    font-size: 15px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    transition: 0.2s;
+    &:hover, &.active {
+      background-color: #f1f1f1;
+      color: var(--base);
+      background-color: var(--base-soft);
+    }
+    .icon {
+      width: 18px;
+    }
+  }
+}
+/* ===================== Sidebar Css End ======================== */

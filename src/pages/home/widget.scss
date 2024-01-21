@@ -1,0 +1,70 @@
+
+/* Widget Css Start */
+.widget-item {
+    background-color: var(--bg-white);
+    box-shadow: var(--box-shadow-sm);
+    padding: 20px;
+    border-radius: 6px;
+    height: 100%;
+
+    &__title {
+        font-size: 12px;
+        font-weight: 500;
+        text-transform: uppercase;
+    }
+    &__calc {
+        font-size: 13px;
+        display: flex;
+        align-items: center;
+        gap: 4px;
+        font-weight: 500;
+        .icon {
+            width: 12px;
+        }
+    }
+    &__link {
+        font-size: 13px;
+    }
+    &__amount {
+        margin-bottom: 0px;
+        margin-top: 8px;
+    }
+    &__icon {
+        width: 40px;
+        height: 40px;
+        background-color: var(--base-soft);
+        color: var(--base);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 6px;
+    }
+}
+
+.widget-item-wrapper div[class*="col"] {
+    &:nth-child(1) {
+        .widget-item {
+            &__icon {
+                color: var(--success);
+                background-color: var(--success-soft);
+            }
+        }
+    }
+    &:nth-child(2) {
+        .widget-item {
+            &__icon {
+                color: var(--danger);
+                background-color: var(--danger-soft);
+            }
+        }
+    }
+    &:nth-child(3) {
+        .widget-item {
+            &__icon {
+                color: var(--info);
+                background-color: var(--info-soft);
+            }
+        }
+    }
+}
+/* Widget Css End */

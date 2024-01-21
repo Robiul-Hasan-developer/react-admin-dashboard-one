@@ -1,0 +1,76 @@
+/* Table Customization Css Start */
+.MuiDataGrid-cell {
+    color: var(--body-color);
+}
+.css-t89xny-MuiDataGrid-columnHeaderTitle {
+    color: var(--heading-color);
+    font-weight: 600 !important;
+}
+
+.table-th {
+    font-size: 12px !important;
+    font-weight: 700 !important;
+    text-transform: uppercase !important;
+    color: var(--body-color) !important;
+}
+.MuiTableCell {
+    &-body {
+        color: var(--body-color);
+    }
+    &-head {
+        color: var(--heading-color) !important;
+        font-weight: 600 !important;
+    }
+}
+
+
+
+
+.badge {
+    &.Paid, &.Active {
+        color: var(--success) !important;
+        background-color: var(--success-soft) !important;
+    }
+    &.Pending {
+        color: var(--warning) !important;
+        background-color: var(--warning-soft) !important;
+    }
+    &.Unpaid, &.Passive {
+        color: var(--danger) !important;
+        background-color: var(--danger-soft) !important;
+    }
+}
+
+
+.user-info {
+    &__avatar {
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        overflow: hidden;
+    }
+    &__name  {
+
+    }
+}
+/* Table Customization Css ENd */
+
+/* Data Table Css Start */
+.userCell {
+    &__img {
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        overflow: hidden;
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+    &__name {
+        font-weight: 600;
+        font-size: 12px;
+    }
+}
+/* Data Table Css End */

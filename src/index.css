@@ -1,0 +1,84 @@
+:root {
+  --base: #0072E5; 
+  --base-soft: #0072e51b; 
+  --white: #fff; 
+  --success: #07d06e; 
+  --success-soft: #07d06f23; 
+  --warning: #ef9741; 
+  --warning-soft: #ef98412a; 
+  --danger: #ff7f7c; 
+  --danger-soft: #ff7e7c29; 
+  --info: #0ac7fb; 
+  --info-soft: #0ac7fb21; 
+  --bg-white: #fff; 
+  --heading-color: #3e454b; 
+  --body-color: #a0a2ac; 
+  --body-color: #707171; 
+  --border-color: #e6e6e6; 
+  --box-shadow: 0 1px 15px #ddd; 
+  --box-shadow-sm: 0 3px 14px #dddddd78; 
+}
+
+body {
+  margin: 0;
+  font-family: 'Public Sans', sans-serif;
+  color: var(--body-color);
+}
+
+ul {
+  margin: 0;
+  padding: 0 !important;
+  list-style: none;
+}
+
+p, span {
+  color: var(--body-color);
+}
+p {
+  margin-bottom: 0 !important;
+}
+span {
+  display: inline-block;
+}
+h1, h2, h3, h4, h5, h6 {
+  color: var(--heading-color);
+  margin-bottom: 0;
+  margin-top: 0;
+}
+
+
+.form-control:focus {
+  border-color: var(--base) !important;
+}
+
+
+img {
+  width: 100%;
+  height: 100%;
+  max-width: 100%;
+}
+
+button {
+  border: 0;
+  background-color: transparent;
+  outline: 0;
+}
+
+
+/* Classes Start */
+.base-soft {
+  background-color: var(--base-soft);
+}
+.text-base {
+  color: var(--base) !important;
+}
+.text--success {
+  color: var(--success) !important;
+}
+.text--heading {
+  color: var(--heading-color) !important;
+}
+.text--body {
+  color: var(--body-color) !important;
+}
+/* Classes End */
