@@ -15,16 +15,16 @@ const Charts = () => {
             <div className="dashboard__item">
               <div className="row gy-4">
                 <div className="col-lg-6">
-                  <ChartCard title="Bar Chart" chartType='bar' />
-                </div>
-                <div className="col-lg-6">
-                  <ChartCard title="Pie Chart" chartType='pie' />
-                </div>
-                <div className="col-lg-6">
                   <ChartCard title="Line Chart" chartType='line' />
                 </div>
                 <div className="col-lg-6">
                   <ChartCard title="Radar Chart" chartType='radar' />
+                </div>
+                <div className="col-lg-6">
+                  <ChartCard title="Bar Chart" chartType='bar' />
+                </div>
+                <div className="col-lg-6">
+                  <ChartCard title="Pie Chart" chartType='pie' />
                 </div>
               </div>
             </div>
