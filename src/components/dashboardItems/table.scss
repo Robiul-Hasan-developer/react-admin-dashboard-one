@@ -23,9 +23,6 @@
     }
 }
 
-
-
-
 .badge {
     &.Paid, &.Active {
         color: var(--success) !important;
@@ -48,9 +45,6 @@
         height: 40px;
         border-radius: 50%;
         overflow: hidden;
-    }
-    &__name  {
-
     }
 }
 /* Table Customization Css ENd */

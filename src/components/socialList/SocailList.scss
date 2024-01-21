@@ -1,0 +1,22 @@
+/* Social List Css Start */
+.social-list {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    &__link {
+        width: 36px;
+        height: 36px;
+        background-color: var(--base);
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-shrink: 0;
+        color: var(--white);
+        transition: .2s;
+        .icon {
+            font-size: 16px;
+        }
+    }
+}
+/* Social List Css End */

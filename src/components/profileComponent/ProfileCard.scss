@@ -1,0 +1,41 @@
+/* Profile Card Css Start */
+.profile-card {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    position: relative;
+    &__thumb {
+        max-width: 80px;
+        max-height: 80px;
+        border-radius: 50%;
+        overflow: hidden;
+        border: 2px solid var(--border-color);
+    }
+    &__name {
+        color: var(--heading-color);
+        font-weight: 700;
+    }
+    &__location .icon {
+        font-size: 14px;
+    }
+    &__editIcon {
+        position: absolute;
+        right: 8px;
+        top: 8px;
+        background-color: var(--base-soft);
+        width: 30px;
+        height: 30px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 50%;
+        z-index: 2;
+        &:hover {
+            transform: scale(1.06);
+        }
+        .icon {
+            font-size: 18px;
+        }
+    }
+}
+/* Profile Card Css End */

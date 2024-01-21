@@ -17,8 +17,12 @@
 }
 
 .header-navbar {
-  border-bottom: 1px solid #ddd;
+  border-bottom: 1px solid var(--border-color);
   padding: 8px 24px;
+  background-color: var(--bg-white);
+  position: sticky;
+  top: 0;
+  z-index: 1;
 }
 
 /* Action Buttons Css Start */

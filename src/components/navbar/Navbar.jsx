@@ -5,7 +5,6 @@ import NotificationsNoneRoundedIcon from "@mui/icons-material/NotificationsNoneR
 import DarkModeOutlinedIcon from "@mui/icons-material/DarkModeOutlined";
 import FullscreenOutlinedIcon from "@mui/icons-material/FullscreenOutlined";
 
-
 import SearchBox from "../searchBox/SearchBox";
 import Notification from "../notification/Notification";
 import userImage from "../../assets/images/avatar1.jpg";
@@ -47,9 +46,21 @@ const Navbar = () => {
     }); 
     // User Info End 
 
-    // Full Screen Code Start
-    
-    // Full Screen Code End
+    // Light Dark Code Start
+//     const [isDarkMode, setIsDarkMode] = useState(false);
+
+//   const handleDarkModeToggle = () => {
+//     setIsDarkMode(prevState => !prevState);
+//     document.body.classList.toggle('darkVersion');
+//   };
+
+    const [isDarkMode, setIsDarkMode] = useState(false)
+
+    const handleDarkModeBtn = () => {
+        setIsDarkMode(!isDarkMode); 
+        document.body.classList.toggle('darkVersion')
+    }
+    // Light Dark Code End
 
 
   return (
@@ -59,7 +70,7 @@ const Navbar = () => {
       </div>
       <div className="header-navbar__right d-flex flex-align gap-1">
         <div className="action-item">
-            <button type="button" className="action-item__button">
+            <button type="button" className="action-item__button" onClick={handleDarkModeBtn} id="lightDarkBtn">
                 <DarkModeOutlinedIcon className="icon" />
             </button>
         </div>

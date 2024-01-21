@@ -22,6 +22,16 @@ import SouthEastOutlinedIcon from '@mui/icons-material/SouthEastOutlined';
 import ShoppingBagOutlinedIcon from '@mui/icons-material/ShoppingBagOutlined';
 import AccountBalanceWalletOutlinedIcon from '@mui/icons-material/AccountBalanceWalletOutlined';
 
+import FacebookOutlinedIcon from '@mui/icons-material/FacebookOutlined';
+import TwitterIcon from '@mui/icons-material/Twitter';
+import LinkedInIcon from '@mui/icons-material/LinkedIn';
+import PinterestIcon from '@mui/icons-material/Pinterest';
+
+import PopularImage1 from "../assets/images/popular1.jpg"; 
+import PopularImage2 from "../assets/images/popular2.jpg"; 
+import PopularImage3 from "../assets/images/popular3.jpg"; 
+
+
 
 export const sideMenuItem = [
     {
@@ -117,6 +127,23 @@ export const notificationItem = [
         time: "50 minutes ago"
     },
 ]
+export const userInfos = [
+    {
+        icon: <AccountCircleOutlinedIcon className='icon'/>,
+        text: "Profile",
+        path: "/profile"
+    },
+    {
+        icon: <SettingsOutlinedIcon className='icon'/>,
+        text: "Setting",
+        path: "/setting"
+    },
+    {
+        icon: <LogoutOutlinedIcon className='icon'/>,
+        text: "Logout",
+        path: "/logout"
+    },
+]
 
 export const widgetContent = [
     {
@@ -188,6 +215,74 @@ export const userDetails = [
     {
         title: "Country",
         desc: "USA"
+    },
+]
+
+export const portfolios = [
+    {
+        text: 'facebook', 
+        icon: <FacebookOutlinedIcon className='icon'/>,
+        placeholder: "https://www.facebook.com",
+        value: "https://www.facebook.com"
+    },
+    {
+        text: 'twitter', 
+        icon: <TwitterIcon className='icon'/>,
+        placeholder: "https://www.twitter.com",
+        value: "https://www.twitter.com"
+    },
+    {
+        text: 'linkedin', 
+        icon: <LinkedInIcon className='icon'/>,
+        placeholder: "https://www.linkedin.com",
+        value: "https://www.linkedin.com"
+    },
+    {
+        text: 'pinterest', 
+        icon: <PinterestIcon className='icon'/>,
+        placeholder: "https://www.pinterest.com",
+        value: "https://www.pinterest.com"
+    },
+]
+
+export const socials = [
+    {
+        text: 'facebook-bordered', 
+        icon: <FacebookOutlinedIcon className='icon'/>,
+        path: "https://www.facebook.com"
+    },
+    {
+        text: 'twitter-bordered', 
+        icon: <TwitterIcon className='icon'/>,
+        path: "https://www.twitter.com"
+    },
+    {
+        text: 'linkedin-bordered', 
+        icon: <LinkedInIcon className='icon'/>,
+        path: "https://www.linkedin.com"
+    },
+    {
+        text: 'pinterest-bordered', 
+        icon: <PinterestIcon className='icon'/>,
+        path: "https://www.pinterest.com"
+    },
+]
+
+export const popularPosts = [
+    {
+        image: PopularImage1, 
+        title: "Develop your apps in your own way",
+        date: "21 Jan 2024"
+    },
+    {
+        image: PopularImage2, 
+        title: "Develop your apps in your own way",
+        date: "21 Jan 2024"
+    },
+    {
+        image: PopularImage3, 
+        title: "Develop your apps in your own way",
+        date: "21 Jan 2024"
     },
 ]
 

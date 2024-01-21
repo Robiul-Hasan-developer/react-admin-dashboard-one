@@ -112,7 +112,7 @@ const DataTable = () => {
         { field: "action", headerName: "Action", width: 200, renderCell: (params) => {
             return (
                 <div className="d-flex align-items-center gap-2">
-                    <Link to={`/users/${params.row.id}`} type="button" className="btn btn-outline-info btn-sm"> Edit </Link>
+                    <Link to={`/users/${params.row.id}`} type="button" className="btn btn-outline-info btn-sm"> View </Link>
                     <button type="button" className="btn btn-outline-danger btn-sm">Delete</button>
                 </div>
             )

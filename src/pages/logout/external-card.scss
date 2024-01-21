@@ -1,0 +1,45 @@
+/* Page Body Css Start */
+.external-page {
+    background-color: var(--dashboard-body-bg);
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+    overflow: hidden;
+    align-items: center;
+    &::before, &::after {
+        position: absolute;
+        content: "";
+        width: 350px;
+        height: 350px;
+        left: -100px;
+        top: -100px;
+        border-radius: 50%;
+        border: 10px solid var(--base-soft);
+    }
+    &::after {
+        left: auto;
+        top: auto;
+        right: -100px;
+        bottom: -100px;
+    }
+}
+
+
+
+.page-card {
+    background-color: var(--bg-white);
+    padding: 32px;
+    border-radius: 8px;
+    box-shadow: var(--box-shadow-sm);
+    text-align: center;
+    min-width: 380px;
+    &__content {
+        margin-top: 24px;
+    }
+    &__title {
+        margin-bottom: 12px;
+    }
+}
+/* Page Body Css End */

@@ -1,4 +1,5 @@
 import React from "react";
+import "./Charts.scss";
 
 import Sidebar from "../../components/sidebar/Sidebar";
 import Navbar from "../../components/navbar/Navbar";

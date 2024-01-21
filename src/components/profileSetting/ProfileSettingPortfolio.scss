@@ -1,0 +1,91 @@
+/* ProfileSettingPortfolio Start */
+.portfolio-list {
+    &__item {
+        display: flex;
+        align-items: center;
+        gap: 12px;
+        margin-bottom: 16px;
+    }
+    &__icon {
+        width: 36px;
+        height: 36px;
+        background-color: var(--base);
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-shrink: 0;
+        color: var(--white);
+        transition: .2s;
+        .icon {
+            font-size: 16px;
+        }
+    }
+}
+.facebook {
+    background-color: #0866ff !important;
+}
+.twitter {
+    background-color: #1da1f2 !important;
+}
+.linkedin {
+    background-color: #0a66c2 !important;
+}
+.github {
+    background-color: #1f2328 !important;
+}
+.pinterest {
+    background-color: #bd081c !important;
+}
+
+.facebook-bordered {
+    border: 1px solid #0866ff !important;
+    color: #0866ff !important;
+    background-color: transparent !important;
+    &:hover {
+        background-color: #0866ff !important;
+        color: var(--white) !important;
+    }
+
+}
+.twitter-bordered {
+    border: 1px solid #1da1f2 !important;
+    color: #1da1f2 !important;
+    background-color: transparent !important;
+    &:hover {
+        background-color: #1da1f2 !important;
+        color: var(--white) !important;
+    }
+
+}
+.linkedin-bordered {
+    border: 1px solid #0a66c2 !important;
+    color: #0a66c2 !important;
+    background-color: transparent !important;
+    &:hover {
+        background-color: #0a66c2 !important;
+        color: var(--white) !important;
+    }
+
+}
+.github-bordered {
+    border: 1px solid #1f2328 !important;
+    color: #1f2328 !important;
+    background-color: transparent !important;
+    &:hover {
+        background-color: #1f2328 !important;
+        color: var(--white) !important;
+    }
+
+}
+.pinterest-bordered {
+    border: 1px solid #bd081c !important;
+    color: #bd081c !important;
+    background-color: transparent !important;
+    &:hover {
+        background-color: #bd081c !important;
+        color: var(--white) !important;
+    }
+
+}
+/* ProfileSettingPortfolio End */

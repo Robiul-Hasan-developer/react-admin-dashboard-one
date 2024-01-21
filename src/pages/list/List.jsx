@@ -13,7 +13,9 @@ const List = () => {
         <div className="dashboard__body">
           <Navbar />
           <div className="dashboard__content">
-            <DataTable/>
+            <div className="dashboard-card widget-item">
+              <DataTable/>
+            </div>
           </div>
         </div>
       </div>

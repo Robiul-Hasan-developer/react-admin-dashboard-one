@@ -1,27 +1,79 @@
 :root {
-  --base: #0072E5; 
-  --base-soft: #0072e51b; 
-  --white: #fff; 
-  --success: #07d06e; 
-  --success-soft: #07d06f23; 
-  --warning: #ef9741; 
-  --warning-soft: #ef98412a; 
-  --danger: #ff7f7c; 
-  --danger-soft: #ff7e7c29; 
-  --info: #0ac7fb; 
-  --info-soft: #0ac7fb21; 
-  --bg-white: #fff; 
-  --heading-color: #3e454b; 
-  --body-color: #a0a2ac; 
-  --body-color: #707171; 
-  --border-color: #e6e6e6; 
-  --box-shadow: 0 1px 15px #ddd; 
-  --box-shadow-sm: 0 3px 14px #dddddd78; 
+  --base: #0072e5;
+  --base-soft: #0072e51b;
+  --white: #fff;
+  --success: #07d06e;
+  --success-soft: #07d06f23;
+  --warning: #ef9741;
+  --warning-soft: #ef98412a;
+  --danger: #ff7f7c;
+  --danger-soft: #ff7e7c29;
+  --info: #0ac7fb;
+  --info-soft: #0ac7fb21;
+  --bg-white: #fff;
+  --heading-color: #3e454b;
+  --body-color: #707171;
+  --dashboard-body-bg: #f8f8f8;
+  --light-color: #a6a6a6;
+  --border-color: #e6e6e6;
+  --border-color-dark: #b3b3b3;
+  --box-shadow: 0 1px 15px #ddd;
+  --box-shadow-sm: 0 3px 14px #dddddd78;
 }
+
+
+/* For Dark Version Variable Value Change */
+body.darkVersion {
+    --base: #0072e5;
+    --base-soft: #0072e51b;
+    --white: #fff;
+    --success: #07d06e;
+    --success-soft: #07d06f23;
+    --warning: #ef9741;
+    --warning-soft: #ef98412a;
+    --danger: #ff7f7c;
+    --danger-soft: #ff7e7c29;
+    --info: #0ac7fb;
+    --info-soft: #0ac7fb21;
+    --bg-white: #292e32;
+    --heading-color: #fff;
+    --body-color: #bcbcbc;
+    --dashboard-body-bg: #1a1d21;
+    --light-color: #a6a6a6;
+    --border-color: #3e3e3e;
+    --border-color-dark: #383838;
+    --box-shadow: 0 1px 15px #0000006b;
+    --box-shadow-sm: 0 3px 14px #0000006b;
+
+    
+  }
+  body.darkVersion .form-control {
+    background-color: #1a1d21 !important;
+  }
+
+  /* Track */
+  body.darkVersion .dashboard ::-webkit-scrollbar-track {
+    background: #4a4a4a;
+  }
+  
+  /* Handle */
+  body.darkVersion .dashboard ::-webkit-scrollbar-thumb {
+    background: #818181;
+    border-radius: 40px;
+  }
+  body.darkVersion .dashboard ::-webkit-scrollbar-thumb:active {
+    background: #979797;
+  }
+  
+  /* Handle on hover */
+  body.darkVersion .dashboard ::-webkit-scrollbar-thumb:hover {
+    background: #acaaaa;
+  }
+/* For Dark Version Variable Value Change */
 
 body {
   margin: 0;
-  font-family: 'Public Sans', sans-serif;
+  font-family: "Public Sans", sans-serif;
   color: var(--body-color);
 }
 
@@ -31,7 +83,8 @@ ul {
   list-style: none;
 }
 
-p, span {
+p,
+span {
   color: var(--body-color);
 }
 p {
@@ -40,17 +93,20 @@ p {
 span {
   display: inline-block;
 }
-h1, h2, h3, h4, h5, h6 {
-  color: var(--heading-color);
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: var(--heading-color) !important;
   margin-bottom: 0;
   margin-top: 0;
 }
 
-
 .form-control:focus {
   border-color: var(--base) !important;
 }
-
 
 img {
   width: 100%;
@@ -64,6 +120,9 @@ button {
   outline: 0;
 }
 
+textarea.form-control{
+  min-height: 120px !important;
+}
 
 /* Classes Start */
 .base-soft {
@@ -81,4 +140,39 @@ button {
 .text--body {
   color: var(--body-color) !important;
 }
+
+.fs-16 {
+  font-size: 16px !important;
+}
+.fs-14 {
+  font-size: 14px !important;
+}
 /* Classes End */
+
+/* Global Css Start */
+.btn {
+  display: flex !important;
+  align-items: center;
+  gap: 4px;
+  justify-content: center;
+}
+
+.form-control:focus {
+  box-shadow: none !important;
+  border-color: var(--base) !important;
+}
+
+.form-control::placeholder {
+  color: var(--light-color) !important;
+  font-size: 14px;
+}
+
+.form-control {
+  border-color: var(--border-color-dark) !important;
+  background-color: var(--bg-white) !important;
+  color: var(--heading-color) !important;
+}
+label {
+  color: var(--heading-color);
+}
+/* Global Css End */
