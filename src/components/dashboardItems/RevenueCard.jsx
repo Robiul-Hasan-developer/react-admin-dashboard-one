@@ -1,7 +1,7 @@
 
 import React from "react";
 import { revenueContent } from "../../data/data";
-import BarChart from "../barChart/barChart";
+import BarChart from './../barChart/BarChart';
 
 const RevenueCard = () => {
 

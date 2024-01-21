@@ -32,7 +32,7 @@ function App() {
             <Route path="new" element={<New />}></Route>
           </Route>
 
-          <Route path="/barchart" element={<BarChartPage />} />
+          <Route path="/Barchart" element={<BarChartPage />} />
           <Route path="/donutchart" element={<PieChartPage />} />
           <Route path="/linechart" element={<LineChartPage />} />
           <Route path="/radarchart" element={<RadarChartPage />} />

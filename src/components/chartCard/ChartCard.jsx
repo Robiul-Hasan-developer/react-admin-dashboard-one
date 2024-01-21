@@ -1,9 +1,9 @@
 import React from "react";
 
-import BarChart from "../../components/barChart/barChart";
-import LineChart from "../lineChart/LineChart";
-import PieChart from "../pieChart/PieChart";
-import RadarChart from "../radarChart/RadarChart";
+import PieChart from './../pieChart/PieChart';
+import LineChart from './../lineChart/LineChart';
+import RadarChart from './../radarChart/RadarChart';
+import BarChart from "../barChart/BarChart";
 
 const ChartCard = ({title, chartType}) => {
 
