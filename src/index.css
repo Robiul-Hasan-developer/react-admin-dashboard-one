@@ -179,7 +179,7 @@ label {
 
 
 .MuiDataGrid-cell {
-  color: var(--body-color);
+  color: var(--body-color) !important;
 }
 .css-t89xny-MuiDataGrid-columnHeaderTitle {
   color: var(--heading-color);
@@ -190,7 +190,7 @@ label {
   color: var(--body-color) !important;
 }
 .css-ptkaw2-MuiDataGrid-root .MuiDataGrid-columnHeader:not(.MuiDataGrid-columnHeader--sorted):hover .MuiDataGrid-sortIcon {
-  opacity: 0.8;
+  opacity: 0.8 !important;
 }
 .css-ptkaw2-MuiDataGrid-root, .css-ptkaw2-MuiDataGrid-root .MuiDataGrid-withBorderColor{
   border-color: var(--border-color) !important;
@@ -205,7 +205,7 @@ label {
   border-color: var(--border-color) !important;
 }
 .MuiDataGrid-selectedRowCount {
-  color: var(--body-color);
+  color: var(--body-color) !important;
 }
 
 .css-zylse7-MuiButtonBase-root-MuiIconButton-root.Mui-disabled {
@@ -213,7 +213,7 @@ label {
 }
 
 body.darkVersion .css-10hburv-MuiTypography-root {
-  color: var(--bg-white);
+  color: var(--bg-white) !important;
 }
 
 
