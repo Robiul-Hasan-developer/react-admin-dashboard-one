@@ -5,7 +5,11 @@ const SearchBox = () => {
     return (
         <div className="search-box">
             <span className="search-box__icon"> <SearchOutlinedIcon className="icon"/> </span>
-            <input type="search" className="form-control shadow-none" placeholder="Search..."/>
+            <input
+                type="search"
+                className="form-control shadow-none searchCard"
+                placeholder="Search..."
+            />
         </div>
     );
 };

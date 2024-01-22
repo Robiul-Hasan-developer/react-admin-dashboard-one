@@ -1,11 +1,13 @@
 
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import "./navbar.scss";
 import NotificationsNoneRoundedIcon from "@mui/icons-material/NotificationsNoneRounded";
 import DarkModeOutlinedIcon from "@mui/icons-material/DarkModeOutlined";
 import FullscreenOutlinedIcon from "@mui/icons-material/FullscreenOutlined";
 import MenuOutlinedIcon from '@mui/icons-material/MenuOutlined';
 import SearchOutlinedIcon from '@mui/icons-material/SearchOutlined';
+import LightModeOutlinedIcon from '@mui/icons-material/LightModeOutlined';
+import FullscreenExitOutlinedIcon from '@mui/icons-material/FullscreenExitOutlined';
 
 import SearchBox from "../searchBox/SearchBox";
 import Notification from "../notification/Notification";
@@ -14,7 +16,7 @@ import UserInfo from "../userInfo/UserInfo";
 
 const Navbar = () => {
 
-    // Notification Start
+    //*************************** Notification Start***************************
     const [notification, setNotification] = useState(false); 
 
     const handleClickNotification = () => {
@@ -29,9 +31,10 @@ const Navbar = () => {
             setNotification(false)
         }
     }); 
-    // Notification End 
+    //*************************** Notification End ***************************
 
-    // User Info Start
+
+    //*************************** User Info Start ***************************
     const [userInfo, setUserInfo] = useState(false);
 
     const handleClickUserInfo = () => {
@@ -45,27 +48,72 @@ const Navbar = () => {
             setUserInfo(false)
         }
     }); 
-    // User Info End 
+    //*************************** User Info End  ***************************
 
-    // Light Dark Code Start
-    const [isDarkMode, setIsDarkMode] = useState(false)
+
+    //*************************** Light Dark Code Start ***************************
+     const [isDarkMode, setIsDarkMode] = useState(
+        localStorage.getItem("darkMode") === "true"
+    );
+    
+    useEffect(() => {
+        // Save dark mode preference to localStorage
+        localStorage.setItem("darkMode", isDarkMode);
+        // Apply dark mode class to body
+        document.body.classList.toggle("darkVersion", isDarkMode);
+    }, [isDarkMode]);
 
     const handleDarkModeBtn = () => {
         setIsDarkMode(!isDarkMode); 
         document.body.classList.toggle('darkVersion')
     }
-    // Light Dark Code End
+    //*************************** Light Dark Code End ***************************
 
-    // Sidebar From Left Side Code Start
+    // *************************** Fullscreen Code Start ***************************
+    const storedFullscreenValue = localStorage.getItem('fullScreen');
+    
+    const [isFullscreen, setIsFullscreen] = useState(
+      storedFullscreenValue ? JSON.parse(storedFullscreenValue) : false
+    );
+  
+    const toggleFullscreen = () => {
+      const dashboard = document.documentElement;
+  
+      if (!document.fullscreenElement) {
+        if (dashboard.requestFullscreen) {
+          dashboard.requestFullscreen();
+        } else if (dashboard.webkitRequestFullscreen) {
+          dashboard.webkitRequestFullscreen();
+        } else if (dashboard.msRequestFullscreen) {
+          dashboard.msRequestFullscreen();
+        }
+      } else {
+        if (document.exitFullscreen) {
+          document.exitFullscreen();
+        } else if (document.webkitExitFullscreen) {
+          document.webkitExitFullscreen();
+        } else if (document.msExitFullscreen) {
+          document.msExitFullscreen();
+        }
+      }
+      setIsFullscreen(!isFullscreen);
+    };
+  
+    useEffect(() => {
+      localStorage.setItem('fullScreen', JSON.stringify(isFullscreen));
+    }, [isFullscreen]);
+    // *************************** Fullscreen Code End ***************************
+
+    //*************************** Sidebar From Left Side Code Start ***************************
     const [isOpenSidebar, setIsOpenSidebar] = useState(false)
 
     const toggleSidebar = () => {
         setIsOpenSidebar(!isOpenSidebar); 
         document.body.classList.toggle('sidebarActive')
     }
-    // Sidebar From Left Side Code End
+    //*************************** Sidebar From Left Side Code End ***************************
 
-    // Toggle Search Code Start
+    // *************************** Toggle Search Code Start ***************************
     const [toggleSearch, setToggleSearch] = useState(false); 
 
     const handleToggleSearch = () => {
@@ -80,8 +128,8 @@ const Navbar = () => {
             setToggleSearch(false)
         }
     }); 
-    
-    // Toggle Search Code End
+    // *************************** Toggle Search Code End ***************************
+
 
   return (
     <div className="header-navbar d-flex flex-wrap justify-content-between align-items-center">
@@ -106,12 +154,19 @@ const Navbar = () => {
         </div>
         <div className="action-item">
             <button type="button" className="action-item__button" onClick={handleDarkModeBtn} id="lightDarkBtn">
-                <DarkModeOutlinedIcon className="icon" />
+                {
+                    isDarkMode ? <LightModeOutlinedIcon className="icon" /> 
+                    : 
+                    <DarkModeOutlinedIcon className="icon" />
+                }                
             </button>
         </div>
         <div className="action-item">
-            <button type="button" className="action-item__button">
-                <FullscreenOutlinedIcon className="icon" />
+            <button type="button" className="action-item__button" onClick={toggleFullscreen}>
+                {
+                    isFullscreen ? <FullscreenExitOutlinedIcon className="icon" /> : <FullscreenOutlinedIcon className="icon" />
+                }
+                
             </button>
         </div>
         <div className="action-item">
