@@ -10,7 +10,7 @@
 }
 .MuiTableCell {
     &-body {
-        color: var(--body-color);
+        color: var(--body-color) !important;
     }
     &-head {
         color: var(--heading-color) !important;

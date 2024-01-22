@@ -215,9 +215,12 @@ label {
   color: var(--body-color) !important;
 }
 
+
 body.darkVersion .css-10hburv-MuiTypography-root {
   color: var(--bg-white) !important;
 }
+
+
 
 
 .body-overlay {
