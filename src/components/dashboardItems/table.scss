@@ -7,6 +7,28 @@
     font-weight: 600 !important;
 }
 
+.css-12wnr2w-MuiButtonBase-root-MuiCheckbox-root, .css-1pe4mpk-MuiButtonBase-root-MuiIconButton-root {
+    color: var(--body-color) !important;
+}
+.css-ptkaw2-MuiDataGrid-root .MuiDataGrid-columnHeader:not(.MuiDataGrid-columnHeader--sorted):hover .MuiDataGrid-sortIcon {
+    opacity: 0.8;
+}
+.css-ptkaw2-MuiDataGrid-root, .css-ptkaw2-MuiDataGrid-root .MuiDataGrid-withBorderColor{
+    border-color: var(--border-color) !important;
+}
+.css-11xur9t-MuiPaper-root-MuiTableContainer-root {
+    background-color: var(--bg-white) !important;
+}
+.css-1yhpg23-MuiTableCell-root, .css-1ex1afd-MuiTableCell-root, .css-177gid-MuiTableCell-root {
+    color: var(--body-color) !important;
+}
+.css-1ygcj2i-MuiTableCell-root, .table-th, .css-1yhpg23-MuiTableCell-root, .css-1ex1afd-MuiTableCell-root, .css-177gid-MuiTableCell-root {
+    border-color: var(--border-color) !important;
+}
+
+
+
+
 .table-th {
     font-size: 12px !important;
     font-weight: 700 !important;

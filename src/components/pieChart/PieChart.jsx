@@ -21,6 +21,10 @@ const PieChart = () => {
               },
             },
           ],
+          legend: {
+            position: "bottom",
+            horizontalAlign: "center",
+          },
         },
       });
     

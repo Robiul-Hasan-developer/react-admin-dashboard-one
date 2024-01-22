@@ -43,6 +43,8 @@ function App() {
 
         </Routes>
       </BrowserRouter>
+
+      <div className="body-overlay"></div>
     </>
   );
 }

@@ -1,4 +1,19 @@
 /* ======================== Navbar Css Start ================================ */
+.search-box-wrapper {
+    background-color: var(--bg-white);
+    padding: 16px;
+    position: absolute;
+    right: 0;
+    top: 100%;
+    min-width: 210px;
+    box-shadow: var(--box-shadow-sm);
+    @media (max-width: 424px) {
+        transform: translateX(50%);
+        right: 50%;
+
+    }
+}
+
 .search-box {
   position: relative;
   &__icon {
@@ -14,6 +29,10 @@
   .form-control {
     padding-left: 44px;
   }
+}
+
+.sidebar__icon {
+    color: var(--body-color);
 }
 
 .header-navbar {
@@ -33,6 +52,10 @@
         height: 40px;
         border-radius: 50%;
         position: relative;
+        @media (max-width: 575px) {
+            width: 34px;
+            height: 34px;
+        }
         &:hover {
             .icon {
                 color: var(--base);
@@ -61,6 +84,9 @@
         .icon {
             width: 24px;
             color: var(--body-color);
+            @media (max-width: 575px) {
+                width: 20px;
+            }
         }
     }
 }
@@ -96,6 +122,9 @@
     z-index: 2;
     max-height: 500px;
     overflow-y: auto;
+    @media (max-width: 375px) {
+        min-width: 250px;
+    }
     &__item {
         margin-bottom: 12px;
         padding-bottom: 12px;
@@ -111,6 +140,7 @@
         height: 34px;
         border-radius: 50%;
         overflow: hidden;
+        flex-shrink: 0;
     }
     &__header {
         background-color: var(--base);
@@ -145,6 +175,10 @@
         width: 40px;
         height: 40px;
         border-radius: 50%;
+        @media (max-width: 575px) {
+            width: 34px;
+            height: 34px;
+        }
         img {
             object-fit: cover;
         }
@@ -188,7 +222,6 @@
         }
     }
 }
-
 /* User Info Css End */
 
 

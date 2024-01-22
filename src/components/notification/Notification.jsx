@@ -5,7 +5,7 @@ const Notification = () => {
     return (
         <div className="notification-dropdown">
             <div className="notification-dropdown__header">
-                <h6 className="notification-dropdown__title mb-0">Notifications</h6>
+                <h6 className="notification-dropdown__title mb-0 text-white">Notifications</h6>
             </div>
             <div className="notification-dropdown__body">
                 {

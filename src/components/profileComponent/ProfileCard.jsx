@@ -1,5 +1,5 @@
 import React from "react";
-import "./profileCard.scss";
+import "./ProfileCard.scss";
 import ProfileAvatarImage from "../../assets/images/avatar1.jpg";
 import LocationOnIcon from '@mui/icons-material/LocationOn';
 import { Link } from "react-router-dom";
