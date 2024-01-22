@@ -1,6 +1,6 @@
 import React from "react";
 import { popularPosts } from "../../data/data";
-import "./popularPost.scss";
+import "./PopularPost.scss";
 
 const PopularPost = () => {
   return (
